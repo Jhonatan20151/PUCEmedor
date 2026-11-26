@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PUCEmedor: menú y pedidos del comedor universitario de la PUCE.">
+  <title>Pedido recibido | PUCEmedor</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <a class="logo" href="index.html" aria-label="PUCEmedor, ir al inicio">
+      <span class="logo__icono" aria-hidden="true">P</span>
+      <span>PUCEmedor</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav__lista">
+        <li><a href="index.html#menu">Menú</a></li>
+        <li><a href="pedidos.html">Pedir</a></li>
+        <li><a href="index.html#horarios">Horarios</a></li>
+        <li><a href="#ayuda">Ayuda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" class="principal" tabindex="-1">
+
+    <section class="seccion confirmacion" aria-labelledby="titulo-gracias">
+      <span class="icono-ok" aria-hidden="true">✓</span>
+      <h1 id="titulo-gracias" class="seccion__titulo">¡Pedido recibido!</h1>
+      <p class="seccion__texto">Tu almuerzo estará listo a la hora que elegiste.</p>
+      <ol class="pasos">
+        <li>Acércate al mostrador “Pedidos”.</li>
+        <li>Di tu nombre.</li>
+        <li>Paga y retira tu plato.</li>
+      </ol>
+      <div class="acciones">
+        <a class="boton" href="index.html#menu">Volver al menú</a>
+        <a class="boton boton--secundario" href="pedidos.html">Hacer otro pedido</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="ayuda" class="pie">
+    <h2>¿Necesitas ayuda?</h2>
+    <p><strong>Quiénes somos:</strong> el comedor universitario de la PUCE, en el campus Quito.</p>
+    <p>
+      <a href="mailto:contacto@pucemedor.com">contacto@pucemedor.com</a>
+      &nbsp;·&nbsp;
+      <a href="tel:+59322991700">(02) 299-1700</a>
+    </p>
+    <p class="pie__copy">© 2026 PUCEmedor · Grupo 3</p>
+  </footer>
+
+</body>
+</html>

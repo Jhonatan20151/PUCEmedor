@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PUCEmedor: menú y pedidos del comedor universitario de la PUCE.">
+  <title>Hacer pedido | PUCEmedor</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <a class="logo" href="index.html" aria-label="PUCEmedor, ir al inicio">
+      <span class="logo__icono" aria-hidden="true">P</span>
+      <span>PUCEmedor</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav__lista">
+        <li><a href="index.html#menu">Menú</a></li>
+        <li><a href="pedidos.html" aria-current="page">Pedir</a></li>
+        <li><a href="index.html#horarios">Horarios</a></li>
+        <li><a href="#ayuda">Ayuda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" class="principal" tabindex="-1">
+
+    <section class="seccion" aria-labelledby="titulo-pedido">
+      <h1 id="titulo-pedido" class="seccion__titulo">Pedido para hoy</h1>
+      <p class="seccion__texto">Completa 4 datos y envía. Pagas al retirar.</p>
+
+      <form class="formulario" action="gracias.html" method="get">
+        <div class="grupo">
+          <label for="nombre">Nombre <span class="obligatorio">(obligatorio)</span></label>
+          <input type="text" id="nombre" name="nombre" class="campo"
+                 autocomplete="name" autocapitalize="words" required>
+        </div>
+
+        <div class="grupo">
+          <label for="plato">Plato <span class="obligatorio">(obligatorio)</span></label>
+          <select id="plato" name="plato" class="campo" required>
+            <option value="">Elige un plato</option>
+            <option>Almuerzo ejecutivo – $3.00</option>
+            <option>Almuerzo vegetariano – $2.75</option>
+            <option>Desayuno completo – $2.00</option>
+            <option>Bolón con café – $1.75</option>
+          </select>
+          <p class="ayuda">Lo que incluye cada plato está en el <a href="index.html#menu">menú de la semana</a>.</p>
+        </div>
+
+        <div class="grupo">
+          <label for="cantidad">Cantidad <span class="obligatorio">(obligatorio)</span></label>
+          <input type="number" id="cantidad" name="cantidad" class="campo"
+                 min="1" max="5" value="1" inputmode="numeric" required>
+        </div>
+
+        <div class="grupo">
+          <label for="hora">Hora de retiro <span class="obligatorio">(obligatorio)</span></label>
+          <select id="hora" name="hora" class="campo" aria-describedby="ayuda-hora" required>
+            <option value="">Elige una hora</option>
+              <option>07:30</option>
+              <option>08:00</option>
+              <option>08:30</option>
+              <option>09:00</option>
+              <option>09:30</option>
+              <option>12:00</option>
+              <option>12:30</option>
+              <option>13:00</option>
+              <option>13:30</option>
+              <option>14:00</option>
+              <option>14:30</option>
+          </select>
+          <p id="ayuda-hora" class="ayuda">Atendemos 07:00–10:00 y 12:00–15:00.</p>
+        </div>
+
+        <details>
+          <summary>Agregar observaciones (opcional)</summary>
+          <div class="grupo">
+            <label for="observaciones">Observaciones</label>
+            <textarea id="observaciones" name="observaciones" class="campo"
+                      placeholder="Ej.: sin cebolla"></textarea>
+          </div>
+        </details>
+
+        <button type="submit" class="boton boton--ancho">Enviar pedido</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="ayuda" class="pie">
+    <h2>¿Necesitas ayuda?</h2>
+    <p><strong>Quiénes somos:</strong> el comedor universitario de la PUCE, en el campus Quito.</p>
+    <p>
+      <a href="mailto:contacto@pucemedor.com">contacto@pucemedor.com</a>
+      &nbsp;·&nbsp;
+      <a href="tel:+59322991700">(02) 299-1700</a>
+    </p>
+    <p class="pie__copy">© 2026 PUCEmedor · Grupo 3</p>
+  </footer>
+
+</body>
+</html>

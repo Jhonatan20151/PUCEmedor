@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PUCEmedor: menú y pedidos del comedor universitario de la PUCE.">
+  <title>Menú y pedidos del comedor | PUCEmedor</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <a class="logo" href="index.html" aria-label="PUCEmedor, ir al inicio">
+      <span class="logo__icono" aria-hidden="true">P</span>
+      <span>PUCEmedor</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav__lista">
+        <li><a href="index.html#menu" aria-current="page">Menú</a></li>
+        <li><a href="pedidos.html">Pedir</a></li>
+        <li><a href="index.html#horarios">Horarios</a></li>
+        <li><a href="#ayuda">Ayuda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" class="principal" tabindex="-1">
+
+    <section class="seccion" aria-labelledby="titulo-inicio">
+      <h1 id="titulo-inicio" class="seccion__titulo">Pide tu almuerzo y retíralo sin hacer fila</h1>
+      <p class="seccion__texto">Elige tu plato, la hora de retiro y listo. Te toma menos de un minuto.</p>
+      <a class="boton boton--ancho" href="pedidos.html">Hacer mi pedido</a>
+    </section>
+
+    <section id="menu" class="seccion menu-semanal" aria-labelledby="titulo-menu">
+      <h2 id="titulo-menu" class="seccion__titulo">Menú de la semana</h2>
+      <p class="seccion__texto">Toca el día para ver qué incluye cada almuerzo.</p>
+      <nav class="tabs" aria-label="Días de la semana">
+        <a href="#lunes">Lunes</a>
+        <a href="#martes">Martes</a>
+        <a href="#miercoles">Miércoles</a>
+        <a href="#jueves">Jueves</a>
+        <a href="#viernes">Viernes</a>
+      </nav>
+      <section id="lunes" class="dia" aria-labelledby="titulo-lunes">
+        <h3 id="titulo-lunes" class="dia__titulo">Almuerzo del lunes</h3>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <h4>Almuerzo ejecutivo</h4>
+            <p class="precio">$3.00</p>
+            <ul class="incluye" aria-label="Incluye">
+              <li>Entrada: Sopa de quinua</li>
+              <li>Plato fuerte: Seco de pollo con arroz y menestra</li>
+              <li>Bebida: Jugo de mora</li>
+            </ul>
+            <a class="boton boton--secundario" href="pedidos.html">Pedir este plato</a>
+          </article>
+          <article class="tarjeta">
+            <h4>Almuerzo vegetariano</h4>
+            <p class="precio">$2.75</p>
+            <ul class="incluye" aria-label="Incluye">
+              <li>Entrada: Crema de zapallo</li>
+              <li>Plato fuerte: Tortilla de verduras con arroz</li>
+              <li>Bebida: Jugo de mora</li>
+            </ul>
+            <a class="boton boton--secundario" href="pedidos.html">Pedir este plato</a>
+          </article>
+        </div>
+      </section>
+      <section id="martes" class="dia" aria-labelledby="titulo-martes">
+        <h3 id="titulo-martes" class="dia__titulo">Almuerzo del martes</h3>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <h4>Almuerzo ejecutivo</h4>
+            <p class="precio">$3.00</p>
+            <ul class="incluye" aria-label="Incluye">
+              <li>Entrada: Locro de papa</li>
+              <li>Plato fuerte: Carne asada con arroz y ensalada</li>
+              <li>Bebida: Jugo de naranjilla</li>
+            </ul>
+            <a class="boton boton--secundario" href="pedidos.html">Pedir este plato</a>
+          </article>
+          <article class="tarjeta">
+            <h4>Almuerzo vegetariano</h4>
+            <p class="precio">$2.75</p>
+            <ul class="incluye" aria-label="Incluye">
+              <li>Entrada: Locro de papa</li>
+              <li>Plato fuerte: Menestra de lenteja con arroz y maduro</li>
+              <li>Bebida: Jugo de naranjilla</li>
+            </ul>
+            <a class="boton boton--secundario" href="pedidos.html">Pedir este plato</a>
+          </article>
+        </div>
+      </section>
+      <section id="miercoles" class="dia" aria-labelledby="titulo-miercoles">
+        <h3 id="titulo-miercoles" class="dia__titulo">Almuerzo del miércoles</h3>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <h4>Almuerzo ejecutivo</h4>
+            <p class="precio">$3.00</p>
+            <ul class="incluye" aria-label="Incluye">
+              <li>Entrada: Sopa de fideo</li>
+              <li>Plato fuerte: Pollo al horno con puré de papa</li>
+              <li>Bebida: Limonada</li>
+            </ul>
+            <a class="boton boton--secundario" href="pedidos.html">Pedir este plato</a>
+          </article>
+          <article class="tarjeta">
+            <h4>Almuerzo vegetariano</h4>
+            <p class="precio">$2.75</p>
+            <ul class="incluye" aria-label="Incluye">
+              <li>Entrada: Sopa de fideo</li>
+              <li>Plato fuerte: Lasaña de vegetales</li>
+              <li>Bebida: Limonada</li>
+            </ul>
+            <a class="boton boton--secundario" href="pedidos.html">Pedir este plato</a>
+          </article>
+        </div>
+      </section>
+      <section id="jueves" class="dia" aria-labelledby="titulo-jueves">
+        <h3 id="titulo-jueves" class="dia__titulo">Almuerzo del jueves</h3>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <h4>Almuerzo ejecutivo</h4>
+            <p class="precio">$3.00</p>
+            <ul class="incluye" aria-label="Incluye">
+              <li>Entrada: Sopa de verduras</li>
+              <li>Plato fuerte: Estofado de res con arroz</li>
+              <li>Bebida: Jugo de piña</li>
+            </ul>
+            <a class="boton boton--secundario" href="pedidos.html">Pedir este plato</a>
+          </article>
+          <article class="tarjeta">
+            <h4>Almuerzo vegetariano</h4>
+            <p class="precio">$2.75</p>
+            <ul class="incluye" aria-label="Incluye">
+              <li>Entrada: Sopa de verduras</li>
+              <li>Plato fuerte: Arroz con champiñones y ensalada</li>
+              <li>Bebida: Jugo de piña</li>
+            </ul>
+            <a class="boton boton--secundario" href="pedidos.html">Pedir este plato</a>
+          </article>
+        </div>
+      </section>
+      <section id="viernes" class="dia" aria-labelledby="titulo-viernes">
+        <h3 id="titulo-viernes" class="dia__titulo">Almuerzo del viernes</h3>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <h4>Almuerzo ejecutivo</h4>
+            <p class="precio">$3.00</p>
+            <ul class="incluye" aria-label="Incluye">
+              <li>Entrada: Crema de choclo</li>
+              <li>Plato fuerte: Pescado apanado con arroz y ensalada</li>
+              <li>Bebida: Jugo de tomate de árbol</li>
+            </ul>
+            <a class="boton boton--secundario" href="pedidos.html">Pedir este plato</a>
+          </article>
+          <article class="tarjeta">
+            <h4>Almuerzo vegetariano</h4>
+            <p class="precio">$2.75</p>
+            <ul class="incluye" aria-label="Incluye">
+              <li>Entrada: Crema de choclo</li>
+              <li>Plato fuerte: Llapingachos con huevo y ensalada</li>
+              <li>Bebida: Jugo de tomate de árbol</li>
+            </ul>
+            <a class="boton boton--secundario" href="pedidos.html">Pedir este plato</a>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section id="desayunos" class="seccion" aria-labelledby="titulo-desayunos">
+      <h2 id="titulo-desayunos" class="seccion__titulo">Desayunos (todos los días)</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Desayuno completo</h3>
+          <p class="precio">$2.00</p>
+          <p>Huevos revueltos, pan, fruta y café o jugo.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Bolón con café</h3>
+          <p class="precio">$1.75</p>
+          <p>Bolón de verde con queso y café pasado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="horarios" class="seccion" aria-labelledby="titulo-horarios">
+      <h2 id="titulo-horarios" class="seccion__titulo">Horarios de atención</h2>
+      <ul class="horarios">
+        <li><span>Desayuno</span> <span>07:00 – 10:00</span></li>
+        <li><span>Almuerzo</span> <span>12:00 – 15:00</span></li>
+      </ul>
+      <p class="seccion__texto">De lunes a viernes. Retira tu pedido en el mostrador “Pedidos”.</p>
+    </section>
+
+  </main>
+
+  <footer id="ayuda" class="pie">
+    <h2>¿Necesitas ayuda?</h2>
+    <p><strong>Quiénes somos:</strong> el comedor universitario de la PUCE, en el campus Quito.</p>
+    <p>
+      <a href="mailto:contacto@pucemedor.com">contacto@pucemedor.com</a>
+      &nbsp;·&nbsp;
+      <a href="tel:+59322991700">(02) 299-1700</a>
+    </p>
+    <p class="pie__copy">© 2026 PUCEmedor · Grupo 3</p>
+  </footer>
+
+</body>
+</html>
